@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>student_window</class>
+ <widget class="QMainWindow" name="student_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>学生信息管理系统</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../resource/student_resource.qrc">
+    <normaloff>:/.svg/student_icon.svg</normaloff>:/.svg/student_icon.svg</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="3" column="0">
+     <widget class="QTableWidget" name="studets_table"/>
+    </item>
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="find_button">
+        <property name="text">
+         <string>搜索</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="find_edit"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <widget class="QMenu" name="menu_2">
+     <property name="title">
+      <string>文件设置</string>
+     </property>
+     <addaction name="file_only_read_set"/>
+    </widget>
+    <addaction name="new_file"/>
+    <addaction name="open_file"/>
+    <addaction name="save_file"/>
+    <addaction name="rsave_file"/>
+    <addaction name="time_file"/>
+    <addaction name="actionbb_2"/>
+    <addaction name="actionbb_3"/>
+    <addaction name="separator"/>
+    <addaction name="edit_www"/>
+    <addaction name="actionaa"/>
+    <addaction name="separator"/>
+    <addaction name="setup"/>
+    <addaction name="menu_2"/>
+    <addaction name="actionaa_2"/>
+    <addaction name="actionss"/>
+    <addaction name="actionss_2"/>
+    <addaction name="separator"/>
+    <addaction name="save"/>
+    <addaction name="separator"/>
+    <addaction name="exit_pro"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="new_file">
+   <property name="text">
+    <string>新建</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="open_file">
+   <property name="text">
+    <string>打开</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="save_file">
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="rsave_file">
+   <property name="text">
+    <string>另存为</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="time_file">
+   <property name="text">
+    <string>最近的文件</string>
+   </property>
+  </action>
+  <action name="actionbb_2">
+   <property name="text">
+    <string>bb</string>
+   </property>
+  </action>
+  <action name="actionbb_3">
+   <property name="text">
+    <string>bb</string>
+   </property>
+  </action>
+  <action name="edit_www">
+   <property name="text">
+    <string>远程编辑</string>
+   </property>
+  </action>
+  <action name="actionaa">
+   <property name="text">
+    <string>aa</string>
+   </property>
+  </action>
+  <action name="setup">
+   <property name="text">
+    <string>设置</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="file_only_read_set">
+   <property name="text">
+    <string>设置文件只读</string>
+   </property>
+  </action>
+  <action name="actionaa_2">
+   <property name="text">
+    <string>aa</string>
+   </property>
+  </action>
+  <action name="actionss">
+   <property name="text">
+    <string>ss</string>
+   </property>
+  </action>
+  <action name="actionss_2">
+   <property name="text">
+    <string>ss</string>
+   </property>
+  </action>
+  <action name="save">
+   <property name="text">
+    <string>节电模式</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+.</string>
+   </property>
+  </action>
+  <action name="exit_pro">
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../resource/student_resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
